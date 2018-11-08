@@ -18,8 +18,31 @@ git remote add origin <remote-address>
 git push -u origin master
 ```
 
-#### 删除不下被托管,但已托管的文件
+#### 删除不想被托管,但已托管的文件
 ```
 # 此方式不会删除本地文件
    git rm -r --cache file
+```
+
+#### 合并某个特定 commit 并提交远程给远程合并
+1) 在自己的分支查看并查找想合并的 `commit-id`
+```
+  git log
+```
+2) 从远程拉个分支下来
+```
+  git checkout -b temp origin/<remote-branch>
+```
+3) 在当前分支合并 commit
+```
+  git cherry-pick <commit-id>
+```
+4) 将分支推送到远程
+```
+  git push origin temp
+```
+5) 在远程操作合并,之后删除远程分支,本地分支
+```
+  git push origin --delete temp
+  git branch -d temp
 ```

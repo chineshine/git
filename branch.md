@@ -8,6 +8,7 @@ git branch -a
 git branch     
 ```
 #### 切换分支
+也可用于在本地新建一个分支
 ```
 git checkout -b <branchname> origin/<branchname>
 ```
