@@ -46,3 +46,9 @@ git push -u origin master
   git push origin --delete temp
   git branch -d temp
 ```
+
+#### 查看单个文件的提交历史
+```
+  git log --pretty=oneline {{file_path}}
+  git log {{commit_id}}
+```
