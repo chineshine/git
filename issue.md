@@ -34,3 +34,9 @@ way:
 ```
    git branch --set-upstream-to=origin/<branch> master
 ```
+
+### 本地看不到远程分支
+```
+  git fetch
+  git branch -a
+```
