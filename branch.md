@@ -13,20 +13,22 @@
 ```
 #### 从远程拉个分支到本地
 ```
-  git checkout -b {{customer-branch-name}} origin/{{remote-branch-name}}
+  git checkout -b {{customer-branch}} origin/{{remote-branch}}
 ```
 #### 切换分支
 ```
-  git checkout {{branch-name}}   
+  git checkout {{branch}}   
 ```
-### 创建远程分支
 #### 创建分支
 ```
   git branch {{branch-name}}
 ```   
 #### 上传分支
 ```
-  git push origin {{branch-name}}
+  git push --set-upstream {{remote}} {{branch}}
+@NOTE
+  创建远程分支可在本地创建分支后上传到远程
+  此处也可用于上传分支到指定远程的指定分支
 ```
 #### 删除本地分支
 ```
@@ -38,17 +40,25 @@
 ```
 #### 删除远程仓库的分支
 ```
-  git push origin --delete {{remote-branch}}
+  git push {{remote}} --delete {{remote-branch}}
 ```
 #### 删除没有与远程分支相对应的本地分支
 ```
-  git remote prune origin
+  git remote prune {{remote}}
 或 :  
   git fetch -p
 ```
 #### 给本地分支重命名
 ```
   git branch -m {{old-branch}} {{new-branch}}
-@Note :
+@NOTE
   重命名远程分支=>删除远程,重命名本地,推送本地分支至远程
+```
+#### 本地分支无远程最终,让其与远程分支进行追踪关联
+```
+  git branch --set-upstream-to={{remote}}/{{remote-branch}} {{local-branch}}
+```
+#### 本地查看分支却发现远程有些分支查看不到
+```
+  git fetch && git branch -a
 ```

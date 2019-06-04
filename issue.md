@@ -29,14 +29,3 @@ way:
 ```
   git pull --allow-unrelated-histories
 ```
-
-## 本地处于无分支状态,进行状态追踪
-```
-   git branch --set-upstream-to=origin/<branch> master
-```
-
-## 本地看不到远程分支
-```
-  git fetch
-  git branch -a
-```
