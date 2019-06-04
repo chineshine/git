@@ -45,7 +45,7 @@ git branch
   git push --set-upstream {{remote}} {{branch}}
 @NOTE
   创建远程分支可在本地创建分支后上传到远程
-  此处也可用于上传分支到指定远程的指定分支
+  此处也可用于上传本地分支到指定远程的指定分支
 ```
 ### 删除本地分支
 ```
@@ -71,7 +71,7 @@ git branch
 @NOTE
   重命名远程分支=>删除远程,重命名本地,推送本地分支至远程
 ```
-### 本地分支无远程最终,让其与远程分支进行追踪关联
+### 本地分支无远程追踪,让其与远程分支进行追踪关联
 ```
   git branch --set-upstream-to={{remote}}/{{remote-branch}} {{local-branch}}
 ```
