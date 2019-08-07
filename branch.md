@@ -59,7 +59,7 @@ git branch
 ```
   git push {{remote}} --delete {{remote-branch}}
 ```
-### 删除没有与远程分支相对应的本地分支
+### 远程分支被删除,本地仍能看到远程的分支,清除远程已经不存在分支
 ```
   git remote prune {{remote}}
 或 :  
