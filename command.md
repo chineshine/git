@@ -1,5 +1,11 @@
 # git command
 
+## 全局初始化用户和邮箱
+```
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+```
+
 ## 项目太大,上传不了
 ```
 # 将上传缓存设置大一些
