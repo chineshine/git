@@ -7,25 +7,26 @@
 ```
 
 ## 项目太大,上传不了
+设置上传缓存  
 ```
-# 将上传缓存设置大一些
   git config http.postBuffer 524288000
 ```
 
 ## 建立仓库后初始化提交
 ```
-git init
-git add .
-git commit -m "init"
-git remote add origin {{remote-address}}
-git push -u origin master
+  git init
+  git add .
+  git commit -m "init"
+  git remote add origin {{remote-address}}
+  git push -u origin master
 ```
 
 ## 删除不想被托管,但已托管的文件
+如 maven 的 target, 不想上传到仓库但已经上传上去了
 ```
-   git rm -r --cache {{file}}
+   git rm -r --cache {{file/dir}}
 @NOTE
-  此不会删除本地文件
+  该操作不会删除本地文件
 ```
 
 ## 合并某个特定 commit 并提交到远程合并

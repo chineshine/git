@@ -22,7 +22,7 @@ remote 指的是远程仓库
 
 ### 查看本地分支
 ```
-git branch     
+  git branch     
 ```
 ### 查看所有分支 包括远程
 ```
