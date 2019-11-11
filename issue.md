@@ -3,7 +3,7 @@
 ## error: src refspec master does not match any
 分析: 初始化提交的时候没写提交信息  
 解决:  
-先建立 README 文件: 
+先建立 README 文件:
 ```
   echo 'hello' > README.md
 ```
@@ -18,11 +18,11 @@ push 上去
 ```
 
 ## error: cannot stat 'file': Permission denied
-在切换分支的出现这个错误:
-分析: 一般在 windows 系统上容易出现,主要是由于 windows 的文件权限问题
-解决:
-  关闭所有 与项目相关的 文件夹 编辑器
-  然后再切换分支就好了,不必重启
+在切换分支的出现这个错误:  
+分析: 一般在 windows 系统上容易出现,主要是由于 windows 的文件权限问题  
+解决:  
+  关闭所有 与项目相关的 文件夹 编辑器  
+  然后再切换分支就好了,不必重启系统  
 ```
   git checkout {{ branch }}
 ```

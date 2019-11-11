@@ -62,7 +62,7 @@ remote 指的是远程仓库
 ### 远程分支被删除,本地仍能看到远程的分支,清除远程已经不存在分支
 ```
   git remote prune {{remote}}
-或 :  
+Or:   
   git fetch -p
 ```
 ### 给本地分支重命名
