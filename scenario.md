@@ -1,4 +1,4 @@
-# git command 
+# git command
 
 ## 全局初始化用户和邮箱
 ```
@@ -78,13 +78,13 @@
 ```
 3. 提交
 ```
-  git commit -m "此处填写要提交的信息"
+  git commit -m "此处填写提交时的备注信息"
 ```
-- 推送到远程
-建议每次推送前,如果不确认远程仓库是否变动,先执行 `git pull`
+- 推送到远程  
 ```
   git push
 ```
+建议每次推送前,如果不确认远程仓库是否变动,先执行 `git pull`
 - 切换分支
 ```
   git checkout {{branch}}
