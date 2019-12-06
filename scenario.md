@@ -1,4 +1,4 @@
-# git command -- some base use
+# git command 
 
 ## 全局初始化用户和邮箱
 ```
