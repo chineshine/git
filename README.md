@@ -1,5 +1,8 @@
 # git
-git 一些知识点和命名介绍
+git 一些知识点介绍
+
+- quick-tour.md
+新手快速上手指南
 
 - push-without-password.md  
 push到远程,不输入账号密码的方式
