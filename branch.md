@@ -83,9 +83,9 @@ remote 指的是远程仓库
 ### 创建一个空白分支
 1. 创建一个孤儿分支, `--orphan` 不包括在创建分支会不包含原分支的所有提交信息
 ```
-  git checkout --orphan doc
+  git checkout --orphan {{ new-branch }}
 ```
-2. 删除该分支下所有内容
+2. 删除新建分支下所有内容
 ```
   git rm -rf .
 ```
