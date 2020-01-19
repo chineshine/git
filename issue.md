@@ -1,7 +1,7 @@
 # some issues I met and the way to solve it
 
 ## error: src refspec master does not match any
-场景: 初始化提交的时候没写提交信息  
+场景: 初始化提交的时候没写提交信息进行提交时  
 解决:  
 1. 先建立 README 文件:
 ```
@@ -18,7 +18,7 @@
 ```
 
 ## error: cannot stat 'file': Permission denied
-在切换分支的出现这个错误:  
+场景: 在切换分支的出现这个错误  
 分析: 一般在 windows 系统上容易出现,主要是由于 windows 的文件权限问题  
 解决:  
   关闭所有 与项目相关的 文件夹 编辑器  
