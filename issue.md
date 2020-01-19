@@ -1,18 +1,18 @@
 # some issues I met and the way to solve it
 
 ## error: src refspec master does not match any
-分析: 初始化提交的时候没写提交信息  
+场景: 初始化提交的时候没写提交信息  
 解决:  
-先建立 README 文件:
+1. 先建立 README 文件:
 ```
   echo 'hello' > README.md
 ```
-再提交:
+2. 再提交:
 ```
   git add README.md
   git commit -m "first commit"
 ```
-push 上去
+3. push 上去
 ```
   git push -u origin master
 ```
@@ -28,7 +28,7 @@ push 上去
 ```
 
 ## fatal: refusing to merge unrelated histories
-场景: 本地有文件未提交,但远程此时有同名文件,在 pull 时报错
+场景: 本地有文件未提交,但远程此时有同名文件,在 pull 时报错  
 解决:  
 ```
   git pull --allow-unrelated-histories
