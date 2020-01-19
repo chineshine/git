@@ -61,10 +61,9 @@ remote 指的是远程仓库
 ```
 ### 远程分支被删除,本地仍能看到远程的分支,清除远程已经不存在分支
 ```
-  git remote prune {{remote}}
-```
-```
-  git fetch -p
+  git remote prune {{remote}}  # 方式一
+
+  git fetch -p                 # 方式二
 ```
 ### 给本地分支重命名
 ```
@@ -81,7 +80,7 @@ remote 指的是远程仓库
   git fetch && git branch -a
 ```
 ### 创建一个空白分支
-1. 创建一个孤儿分支, `--orphan` 不包括在创建分支会不包含原分支的所有提交信息
+1. 创建一个孤儿分支, `--orphan` 会在创建分支时不包含原分支的所有提交信息
 ```
   git checkout --orphan {{ new-branch }}
 ```
