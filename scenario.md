@@ -55,5 +55,9 @@
 ## 查看单个文件的提交历史
 ```
   git log --pretty=oneline {{file_path}}
-  git log {{commit_id}}
+```
+
+## 查看某个提交(commit)下的关联的所有文件
+```
+  git show {{ commit-id }} --stat
 ```
