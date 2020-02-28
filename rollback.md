@@ -14,3 +14,13 @@
 ```
   git reset HEAD {{ file }}
 ```
+
+## 恢复 误删 分支
+1. 显示所有的 commit
+```
+  git reflog
+```
+2. 恢复被删除的分支
+```
+  git branch {{ branch-name }} HEAD@{$NUM}
+```
