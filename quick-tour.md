@@ -26,7 +26,7 @@
 ```
 2. add
 ```
-  git add {{file/dir}}
+  git add {{file-or-dir}}
 ```
 3. 提交  
 ```
@@ -35,7 +35,7 @@
    -m : 参数必需,为所提交的事物的说明信息
 ```
 
-- 推送到远程仓库(如:github,gitlab 等)  
+- 推送到远程仓库(如: github,gitlab 等)  
 ```
   git push
 
