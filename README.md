@@ -1,6 +1,7 @@
 # git
-git 一些知识点介绍
+git 相关使用,场景与命令介绍
 
+## 目录
 - quick-tour.md
 新手快速上手指南
 
@@ -18,3 +19,11 @@ git 分支操作相关内容
 
 - rollback.md
 回滚的一些常用操作(待完善)
+
+- sub-module.md
+子模块的一些操作事项
+
+## 安装 `git review`
+```
+  pip install -i https://pypi.douban.com/simple git-review
+```
