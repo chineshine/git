@@ -28,6 +28,10 @@ remote 指的是远程仓库
 ```
   git branch -a   
 ```
+### 查看本地分支对应的远程分支
+```
+  git branch -vv
+```
 ### 从远程拉个分支到本地
 ```
   git checkout -b {{customer-branch}} origin/{{remote-branch}}

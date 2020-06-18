@@ -61,3 +61,22 @@
 ```
   git show {{ commit-id }} --stat
 ```
+
+## 提交时,某些文件不想提交
+1) 暂存,将未提交文件暂时缓存到本地栈中
+```
+  git stash
+```
+2) 查看缓存栈中信息
+```
+  git stash list
+```
+3) 恢复某次缓存
+```
+# 如恢复第一次
+  git stash apply stash@{0}
+```
+4) 清空缓存栈
+```
+  git stash clear
+```
