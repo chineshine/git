@@ -25,5 +25,6 @@
 ```
 ## 长期存储密码
 ```
+  git config credential.helper store –file=.git_credentails
   git config –global credential.helper store
 ```
