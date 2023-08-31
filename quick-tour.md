@@ -69,3 +69,8 @@
 ```
   git checkout -f
 ```
+
+## 生成ssh-key
+```
+  ssh-keygen -t rsa -b 4096 -C "{{your email}}"
+```
